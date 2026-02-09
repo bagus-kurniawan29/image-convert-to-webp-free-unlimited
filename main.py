@@ -41,7 +41,6 @@ def konversi_ke_webp_dengan_dialog():
             output_path = os.path.join(output_dir, f"{name_without_ext}.webp")
 
             # 3. Konversi dan simpan ke WebP
-            # Kualitas (quality=85) bisa Anda ubah. Semakin rendah, semakin kecil file.
             img.save(output_path, "webp", quality=85) 
             
             print(f"✅ Berhasil konversi: '{filename}' -> '{os.path.basename(output_path)}'")
@@ -58,8 +57,5 @@ def konversi_ke_webp_dengan_dialog():
         
     print(f"Silakan cek file Anda di folder: {output_dir}")
     print("="*50)
-
-
-# Jalankan fungsi utama
 if __name__ == "__main__":
     konversi_ke_webp_dengan_dialog()
